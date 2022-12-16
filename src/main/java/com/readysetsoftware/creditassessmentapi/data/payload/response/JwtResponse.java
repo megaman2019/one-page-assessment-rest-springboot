@@ -1,0 +1,18 @@
+package com.readysetsoftware.creditassessmentapi.data.payload.response;
+
+import java.io.Serializable;
+
+public class JwtResponse implements Serializable {
+
+    private static final long serialVersionUID = 8317676219297719109L;
+
+    private final String token;
+
+    public JwtResponse(String token) {
+        this.token = token;
+    }
+
+    public String getToken() {
+        return this.token;
+    }
+}
